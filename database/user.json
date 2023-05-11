@@ -3,6 +3,7 @@
 "profession": "Software Engineer",
 "age": 29,
 "residence": "S. Korea",
+"freelance": "Available",
 "adress": "S.Korea, Busan",
 "languages": ["Uzbek", "Korean", "English","Russian"],
 "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
