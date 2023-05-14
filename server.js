@@ -4,7 +4,7 @@ const mongodb = require("mongodb");
 
 let db;
 const connectionString = 
-"mongodb+srv://frank:P0zB65ZNhct0p7rF@cluster0.fzkk7bm.mongodb.net/"
+"mongodb+srv://frankshi94:eVR5ycVM0t7aJ2l2@cluster0.l7w5lhq.mongodb.net/?retryWrites=true&w=majority"
 
 mongodb.connect(connectionString, {
     useNewUrlParser: true,
