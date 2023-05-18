@@ -1,6 +1,5 @@
 // // console.log("FrontEnd JS ishga tushdi");
 
-const { response } = require("../app");
 
 // const { response } = require("../app");
 
