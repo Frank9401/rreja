@@ -167,45 +167,70 @@
 //Task D
 
 
-const moment = require("moment");
-// const bodyParser = require("body-parser");
+// const moment = require("moment");
+// // const bodyParser = require("body-parser");
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.bread = non;
-    this.pasta = lagmon;
-    this.drink = cola;
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.bread = non;
+//     this.pasta = lagmon;
+//     this.drink = cola;
+//   }
+
+//   qoldiq() {
+//     console.log(`${moment().format('HH:mm')}da sizda ${this.bread} ta non, ${this.pasta} ta lag'mon va ${this.drink} ta cola mavjud!`);
+//   }
+
+//   sotish(mahsulot, miqdor) {
+//     if (mahsulot === 'non') {
+//       this.bread -= miqdor;
+//     } else if (mahsulot === 'lagmon') {
+//       this.pasta -= miqdor;
+//     } else if (mahsulot === 'cola') {
+//       this.drink -= miqdor;
+//     }
+//     console.log(`${moment().format('HH:mm')}da ${miqdor} ta ${mahsulot} sotildi!`);
+//   }
+
+//   qabul(mahsulot, miqdor) {
+//     if (mahsulot === 'non') {
+//       this.bread += miqdor;
+//     } else if (mahsulot === 'lagmon') {
+//       this.pasta += miqdor;
+//     } else if (mahsulot === 'cola') {
+//       this.drink += miqdor;
+//     }
+//     console.log(`${moment().format('HH:mm')}da ${miqdor} ta ${mahsulot} qabul qilindi!`);
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq(); // Output: 20:40da sizda 4 ta non, 5 ta lag'mon va 2 ta cola mavjud!
+// shop.sotish('non', 3); // Output: 20:50da 3 ta non sotildi!
+// shop.qabul('cola', 4); // Output: 20:50da 4 ta cola qabul qilindi!
+// shop.qoldiq(); // Output: 20:50da sizda 1 ta non, 5 ta lag'mon va 6 ta cola mavjud!
+
+
+function number(num)
+{
+  if (num===1)
+  {
+    return false;
   }
-
-  qoldiq() {
-    console.log(`${moment().format('HH:mm')}da sizda ${this.bread} ta non, ${this.pasta} ta lag'mon va ${this.drink} ta cola mavjud!`);
-  }
-
-  sotish(mahsulot, miqdor) {
-    if (mahsulot === 'non') {
-      this.bread -= miqdor;
-    } else if (mahsulot === 'lagmon') {
-      this.pasta -= miqdor;
-    } else if (mahsulot === 'cola') {
-      this.drink -= miqdor;
+  else if(num === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < num; x++)
+    {
+      if(num % x === 0)
+      {
+        return false;
+      }
     }
-    console.log(`${moment().format('HH:mm')}da ${miqdor} ta ${mahsulot} sotildi!`);
-  }
-
-  qabul(mahsulot, miqdor) {
-    if (mahsulot === 'non') {
-      this.bread += miqdor;
-    } else if (mahsulot === 'lagmon') {
-      this.pasta += miqdor;
-    } else if (mahsulot === 'cola') {
-      this.drink += miqdor;
-    }
-    console.log(`${moment().format('HH:mm')}da ${miqdor} ta ${mahsulot} qabul qilindi!`);
+    return true;  
   }
 }
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq(); // Output: 20:40da sizda 4 ta non, 5 ta lag'mon va 2 ta cola mavjud!
-shop.sotish('non', 3); // Output: 20:50da 3 ta non sotildi!
-shop.qabul('cola', 4); // Output: 20:50da 4 ta cola qabul qilindi!
-shop.qoldiq(); // Output: 20:50da sizda 1 ta non, 5 ta lag'mon va 6 ta cola mavjud!
+console.log(number(5));
